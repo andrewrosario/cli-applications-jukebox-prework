@@ -19,5 +19,5 @@ def help
 end
 
 def list
-  
+  songs.map
 end
