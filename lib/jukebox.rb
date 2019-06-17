@@ -43,6 +43,10 @@ def play(songs)
   
   puts input.class
   
+  songs.each_with_index { |song, index|
+    
+  }
+  
   
   
 end
