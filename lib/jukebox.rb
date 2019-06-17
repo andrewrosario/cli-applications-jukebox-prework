@@ -45,7 +45,7 @@ def play(songs)
   
   songs.each_with_index { |song, index|
     puts song.class
-    if input == (index + 1).to_s || song.include? input
+    if input == (index + 1).to_s || song.include?(input)
       puts "#{song} is now playing"
     end
   }
