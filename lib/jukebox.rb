@@ -19,7 +19,7 @@ def help
 end
 
 def list
-  puts songs.map.with_index { |item, index|
-    
+  songs.map.with_index { |item, index|
+    puts "#{index}. #{item}"
   }
 end
