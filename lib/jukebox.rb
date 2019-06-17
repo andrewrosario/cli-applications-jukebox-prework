@@ -30,5 +30,5 @@ def jukebox_help
 end
 
 def list
-  puts golf
+  puts songs
 end
