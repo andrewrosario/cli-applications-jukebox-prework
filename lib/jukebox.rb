@@ -6,7 +6,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def list
+def list(songs)
   songs.map.with_index { |item, index|
     puts "#{index + 1}. #{item}"
   }
@@ -39,7 +39,7 @@ def run
       when "HELP"
         help
       when "LIST"
-        list
+        list(songs)
       when "PLAY"
         play(songs)
       else
