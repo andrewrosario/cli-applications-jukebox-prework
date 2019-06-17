@@ -33,6 +33,6 @@ def list
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
   songs.map.with_index { |item, index|
-    puts "#{index}. #{item}"
+    puts "#{index + 1}. #{item}"
   }
 end
