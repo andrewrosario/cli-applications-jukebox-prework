@@ -9,19 +9,10 @@
 
 # puts say_hello(users_name)
 
-songs = [
-  "Phoenix - 1901",
-  "Tokyo Police Club - Wait Up",
-  "Sufjan Stevens - Too Much",
-  "The Naked and the Famous - Young Blood",
-  "(Far From) Home - Tiga",
-  "The Cults - Abducted",
-  "Phoenix - Consolation Prizes",
-  "Harry Chapin - Cats in the Cradle",
-  "Amos Lee - Keep It Loose, Keep It Tight"
-]
 
-def jukebox_help 
+
+
+def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
@@ -30,5 +21,7 @@ def jukebox_help
 end
 
 def list
-  puts songs
+  songs.map.with_index { |item, index|
+    puts "#{index}. #{item}"
+  }
 end
