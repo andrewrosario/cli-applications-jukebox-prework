@@ -1,17 +1,3 @@
-# Add your code here
-
-# def say_hello(name)
-#   "Hi #{name}!"
-# end
-
-# puts "Enter your name:"
-# users_name = gets.chomp 
-
-# puts say_hello(users_name)
-
-
-
-
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -40,15 +26,32 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
-  
   puts input.class
-  
   songs.each_with_index { |song, index|
     puts song.class
     if input == (index + 1).to_s || song.upcase.include?(input.upcase)
       puts "#{song} is now playing"
     else
-      puts 
+      puts "Invalid input, please try again"
     end
   }
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  help
+  puts "Please enter a command:"
+  input = gets.chomp
+  case input
+    when input == 
+end
+
+
+
+
+
+
+
