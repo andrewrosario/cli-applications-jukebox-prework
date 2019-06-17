@@ -47,9 +47,8 @@ def play(songs)
     puts song.class
     if input == (index + 1).to_s || song.upcase.include?(input.upcase)
       puts "#{song} is now playing"
+    else
+      puts 
     end
   }
-  
-  
-  
 end
