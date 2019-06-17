@@ -33,8 +33,4 @@ end
 
 def list
   puts songs
-  
-  #.map { |item|
-   # puts "#{item}"
-  }
 end
