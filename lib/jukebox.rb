@@ -39,9 +39,9 @@ def run
       when "HELP"
         help
       when "LIST"
-        list
+        list(songs)
       when "PLAY"
-        play
+        play(songs)
       else
         puts "Invalid Command"
         help
