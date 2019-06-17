@@ -36,3 +36,18 @@ def list
     puts "#{index + 1}. #{item}"
   }
 end
+
+def play(songs)
+  puts
+  
+end
+
+
+
+
+
+
+
+
+
+
