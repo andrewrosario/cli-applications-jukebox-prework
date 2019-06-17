@@ -45,10 +45,20 @@ def run
   help
   puts "Please enter a command:"
   input = gets.chomp
-  case input
-    when input.upcase == "HELP"
-      help
-    when
+  while input.upcase != "EXIT"
+    case input.upcase
+      when "HELP"
+        help
+      when "LIST"
+        list
+      when "PLAY"
+        play
+      else
+        puts "Invalid Command"
+        help
+      end
+    end
+  exit
 end
 
 
