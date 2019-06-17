@@ -46,7 +46,9 @@ def run
   puts "Please enter a command:"
   input = gets.chomp
   case input
-    when input.upcase == 
+    when input.upcase == "HELP"
+      help
+    when
 end
 
 
